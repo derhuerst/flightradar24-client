@@ -4,7 +4,8 @@
 	"version": "0.1.0",
 	"main": "index.js",
 	"files": [
-		"index.js"
+		"index.js",
+		"lib"
 	],
 	"keywords": [
 		"aviation",
@@ -21,6 +22,9 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"fetch-ponyfill": "^4.1.0",
+		"parse-jsonp": "^0.1.0",
+		"pinkie-promise": "^2.0.1"
 	},
 	"devDependencies": {
 		"tape": "^4.6.3",
