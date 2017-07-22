@@ -1,5 +1,7 @@
 # flightradar24-client
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/derhuerst/flightradar24-client.svg)](https://greenkeeper.io/)
+
 **Fetch aircraft data from [Flightradar24](https://www.flightradar24.com/).** Inofficial. Work in progress.
 
 [![npm version](https://img.shields.io/npm/v/flightradar24-client.svg)](https://www.npmjs.com/package/flightradar24-client)
