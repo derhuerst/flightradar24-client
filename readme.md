@@ -1,6 +1,6 @@
 # flightradar24-client
 
-**Fetch aircraft data from [Flightradar24](https://www.flightradar24.com/).** Inofficial. Work in progress.
+**Fetch aircraft data from [Flightradar24](https://www.flightradar24.com/).** Inofficial.
 
 [![npm version](https://img.shields.io/npm/v/flightradar24-client.svg)](https://www.npmjs.com/package/flightradar24-client)
 [![build status](https://img.shields.io/travis/derhuerst/flightradar24-client.svg)](https://travis-ci.org/derhuerst/flightradar24-client)
@@ -66,7 +66,7 @@ radar(53, 13, 52, 14)
 
 ### `flight(id)`
 
-You may use the `id` from one of the results above to query more details.
+You may use the `id` from one of the results above to query more details. The output will roughly look like the [*Friendly Public Transport Format*](https://github.com/public-transport/friendly-public-transport-format).
 
 ```js
 const flight = require('flightradar24-client/lib/flight')

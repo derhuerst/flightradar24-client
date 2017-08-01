@@ -22,15 +22,15 @@
 		"node": ">=6"
 	},
 	"dependencies": {
-		"dot-prop": "^4.1.1",
+		"dot-prop": "^4.2.0",
 		"fetch-ponyfill": "^4.1.0",
 		"moment-timezone": "^0.5.13",
 		"parse-jsonp": "^0.1.0",
 		"pinkie-promise": "^2.0.1"
 	},
 	"devDependencies": {
-		"tape": "^4.6.3",
-		"tap-min": "^1.2.1"
+		"tap-min": "^1.2.1",
+		"tape": "^4.8.0"
 	},
 	"scripts": {
 		"test": "node test.js | tap-min",
