@@ -1,7 +1,7 @@
 {
 	"name": "flightradar24-client",
 	"description": "Fetch aircraft data from Flightradar24.",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"main": "index.js",
 	"files": [
 		"index.js",
