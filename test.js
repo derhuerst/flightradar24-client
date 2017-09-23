@@ -26,7 +26,7 @@ test('radar', (t) => {
 		t.ok(Array.isArray(flights))
 		for (let flight of flights) {
 			t.ok(flight)
-			t.equal(typeof flight.id, 'string') // todo: validate IATA code
+			if (flight.id !== null) t.equal(typeof flight.id, 'string') // todo: validate IATA code
 			t.equal(typeof flight.registration, 'string')
 			if (flight.flight) t.equal(typeof flight.flight, 'string')
 			t.equal(typeof flight.callsign, 'string')
@@ -36,7 +36,7 @@ test('radar', (t) => {
 			t.equal(typeof flight.longitude, 'number')
 			t.equal(typeof flight.altitude, 'number')
 			t.equal(typeof flight.bearing, 'number')
-			t.equal(typeof flight.speed, 'number')
+			if (flight.speed !== null) t.equal(typeof flight.speed, 'number')
 			if (flight.model) t.equal(typeof flight.model, 'string')
 			t.equal(typeof flight.modeSCode, 'string')
 			t.equal(typeof flight.radar, 'string')
