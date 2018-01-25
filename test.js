@@ -48,7 +48,12 @@ test('radar', (t) => {
 
 test('flight', (t) => {
 	radar(50.5, 8.5, 50, 9)
-	.then((flights) => flight(flights[0].id))
+	.then((flights) => {
+		t.ok(Array.isArray(flights))
+		t.ok(flights[0])
+		t.ok(flights[0].id)
+		return flight(flights[0].id)
+	})
 	.then((flight) => {
 		t.ok(flight)
 
@@ -94,7 +99,7 @@ test('flight', (t) => {
 		if (flight.arrivalGate) {
 			t.equal(typeof flight.arrivalGate, 'string')
 		}
-		t.equal(typeof flight.delay, 'number')
+		if (flight.delay !== null) t.equal(typeof flight.delay, 'number')
 
 		t.end()
 	})
