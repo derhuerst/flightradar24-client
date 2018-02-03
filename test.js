@@ -24,6 +24,8 @@ test('radar', (t) => {
 	radar(50.5, 8.5, 50, 9)
 	.then((flights) => {
 		t.ok(Array.isArray(flights))
+		if (!flights[0]) throw new Error('no flights found')
+
 		for (let flight of flights) {
 			t.ok(flight)
 			if (flight.id !== null) t.equal(typeof flight.id, 'string') // todo: validate IATA code
@@ -50,6 +52,8 @@ test('flight', (t) => {
 	radar(50.5, 8.5, 50, 9)
 	.then((flights) => {
 		t.ok(Array.isArray(flights))
+		if (!flights[0]) throw new Error('no flights found')
+
 		t.ok(flights[0])
 		t.ok(flights[0].id)
 		return flight(flights[0].id)
