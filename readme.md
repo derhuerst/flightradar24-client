@@ -21,12 +21,12 @@ npm install flightradar24-client
 
 Here they represent a geographical bounding box (in decimal degrees) with: 
 
-```
- Northern edge latitude
- Western edge longitude
- Southern edge latitude
- Easter edge longitude
-```
+
+* `north`: Northern edge latitude
+* `west`: Western edge longitude
+* `south`: Southern edge latitude
+* `east`: Eastern edge longitude
+
 
 If you want to test it from command line, you can do it by adding the shebang `#!/usr/bin/node` 
 on top of the code below. Also make sure that the bounding box is large enough and located over 
