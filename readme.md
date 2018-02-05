@@ -28,11 +28,6 @@ Here they represent a geographical bounding box (in decimal degrees) with:
 * `east`: Eastern edge longitude
 
 
-If you want to test it from command line, you can do it by adding the shebang `#!/usr/bin/node` 
-on top of the code below. Also make sure that the bounding box is large enough and located over 
-a place where there are airtraffic, otherwise the code will fail a `TypeError`.
-
-
 ```js
 const radar = require('flightradar24-client/lib/radar')
 
