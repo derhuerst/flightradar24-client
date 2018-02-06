@@ -19,14 +19,12 @@ npm install flightradar24-client
 
 ### `radar(north, west, south, east)`
 
-Here they represent a geographical bounding box (in decimal degrees) with: 
-
+The four parameters represent a geographical bounding box (in decimal degrees) with:
 
 * `north`: Northern edge latitude
 * `west`: Western edge longitude
 * `south`: Southern edge latitude
 * `east`: Eastern edge longitude
-
 
 ```js
 const radar = require('flightradar24-client/lib/radar')
@@ -47,9 +45,9 @@ radar(53, 13, 52, 14)
 		destination: null,
 		latitude: 52.5352,
 		longitude: 12.9761,
-		altitude: 2100,
-		bearing: 84,
-		speed: 101,
+		altitude: 2100, // in feet
+		bearing: 84, // in degrees
+		speed: 101, // in knots
 		model: null,
 		modeSCode: '3FED5C',
 		radar: 'T-MLAT1'
@@ -62,9 +60,9 @@ radar(53, 13, 52, 14)
 		destination: 'BRU',
 		latitude: 52.5947,
 		longitude: 13.1046,
-		altitude: 14815,
-		bearing: 262,
-		speed: 246,
+		altitude: 14815, // in feet
+		bearing: 262, // in degrees
+		speed: 246, // in knots
 		model: 'DH8D',
 		modeSCode: '405E66',
 		radar: 'T-MLAT1'
