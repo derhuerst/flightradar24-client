@@ -6,6 +6,7 @@
 [![build status](https://img.shields.io/travis/derhuerst/flightradar24-client.svg)](https://travis-ci.org/derhuerst/flightradar24-client)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/flightradar24-client.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
+[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
 
 
 ## Installing
@@ -116,6 +117,11 @@ flight('e3147c6')
 	delay: 1757
 }
 ```
+
+
+## Related
+
+- [MMM-FlightsAbove](https://github.com/E3V3A/MMM-FlightsAbove#magicmirror-module-flightsabove) – A [MagicMirror](https://magicmirror.builders) Module for using displaying current flights in the sky above you!
 
 
 ## Contributing
