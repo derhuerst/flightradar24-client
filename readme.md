@@ -38,35 +38,28 @@ radar(53, 13, 52, 14)
 ```js
 [
 	{
-		id: 'e3146d4',
-		registration: 'D-MAKD',
-		flight: null,
-		callsign: 'DMAKD',
-		origin: null,
-		destination: null,
-		latitude: 52.5352,
-		longitude: 12.9761,
-		altitude: 2100, // in feet
-		bearing: 84, // in degrees
-		speed: 101, // in knots
-		model: null,
-		modeSCode: '3FED5C',
-		radar: 'T-MLAT1'
-	}, {
-		id: 'e3147c6',
-		registration: 'G-ECOI',
-		flight: 'SN2588',
-		callsign: 'BEL88T',
-		origin: 'TXL',
-		destination: 'BRU',
-		latitude: 52.5947,
-		longitude: 13.1046,
-		altitude: 14815, // in feet
-		bearing: 262, // in degrees
-		speed: 246, // in knots
-		model: 'DH8D',
-		modeSCode: '405E66',
-		radar: 'T-MLAT1'
+		id: '10a6b765',
+		registration: 'EI-EGD',
+		flight: 'FR8544',
+		callsign: 'RYR9XK',
+		origin: 'STN',
+		destination: 'SXF',
+
+		latitude: 52.7044,
+		longitude: 13.4576,
+		altitude: 8800, // in feet
+		bearing: 106, // in degrees
+		speed: 290, // in knots
+		rateOfClimb: -1216, // in ft/min
+		isOnGround: false,
+
+		squawkCode: '0534',
+		model: 'B738',
+		modeSCode: '4CA8AF',
+		radar: 'T-EDDT1',
+		isGlider: false,
+
+		timestamp: 1520538174
 	}
 	// …
 ]

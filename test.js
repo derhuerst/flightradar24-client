@@ -28,20 +28,39 @@ test('radar', (t) => {
 
 		for (let flight of flights) {
 			t.ok(flight)
-			if (flight.id !== null) t.equal(typeof flight.id, 'string') // todo: validate IATA code
+			if (flight.id !== null) {
+				t.equal(typeof flight.id, 'string') // todo: validate IATA code
+			}
 			t.equal(typeof flight.registration, 'string')
-			if (flight.flight) t.equal(typeof flight.flight, 'string')
+			if (flight.flight !== null) {
+				t.equal(typeof flight.flight, 'string')
+			}
 			t.equal(typeof flight.callsign, 'string')
-			if (flight.origin) t.equal(typeof flight.origin, 'string')
-			if (flight.destination) t.equal(typeof flight.destination, 'string')
+			if (flight.origin !== null) {
+				t.equal(typeof flight.origin, 'string')
+			}
+			if (flight.destination !== null) {
+				t.equal(typeof flight.destination, 'string')
+			}
 			t.equal(typeof flight.latitude, 'number')
 			t.equal(typeof flight.longitude, 'number')
 			t.equal(typeof flight.altitude, 'number')
 			t.equal(typeof flight.bearing, 'number')
-			if (flight.speed !== null) t.equal(typeof flight.speed, 'number')
-			if (flight.model) t.equal(typeof flight.model, 'string')
+			if (flight.speed !== null) {
+				t.equal(typeof flight.speed, 'number')
+			}
+			if (flight.rateOfClimb !== null) {
+				t.equal(typeof flight.rateOfClimb, 'number')
+			}
+			t.equal(typeof flight.isOnGround, 'boolean')
+			t.equal(typeof flight.squawkCode, 'string')
+			if (flight.model !== null) {
+				t.equal(typeof flight.model, 'string')
+			}
 			t.equal(typeof flight.modeSCode, 'string')
 			t.equal(typeof flight.radar, 'string')
+			t.equal(typeof flight.isGlider, 'boolean')
+			t.equal(typeof flight.timestamp, 'number')
 		}
 		t.end()
 	})
