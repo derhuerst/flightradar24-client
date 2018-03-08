@@ -3,7 +3,7 @@
 **Fetch aircraft data from [Flightradar24](https://www.flightradar24.com/).** Inofficial.
 
 [![npm version](https://img.shields.io/npm/v/flightradar24-client.svg)](https://www.npmjs.com/package/flightradar24-client)
-[![build status](https://img.shields.io/travis/derhuerst/flightradar24-client.svg)](https://travis-ci.org/derhuerst/flightradar24-client)
+[![build status](https://img.shields.io/travis/derhuerst/flightradar24-client.svg?branch=master)](https://travis-ci.org/derhuerst/flightradar24-client)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/flightradar24-client.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
 [![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
@@ -41,9 +41,9 @@ radar(53, 13, 52, 14)
 		id: '10a6b765',
 		registration: 'EI-EGD',
 		flight: 'FR8544',
-		callsign: 'RYR9XK',
-		origin: 'STN',
-		destination: 'SXF',
+		callsign: 'RYR9XK', // ICAO ATC call signature
+		origin: 'STN', // airport IATA code
+		destination: 'SXF', // airport IATA code
 
 		latitude: 52.7044,
 		longitude: 13.4576,
@@ -53,10 +53,10 @@ radar(53, 13, 52, 14)
 		rateOfClimb: -1216, // in ft/min
 		isOnGround: false,
 
-		squawkCode: '0534',
-		model: 'B738',
-		modeSCode: '4CA8AF',
-		radar: 'T-EDDT1',
+		squawkCode: '0534', // https://en.wikipedia.org/wiki/Transponder_(aeronautics)
+		model: 'B738', // ICAO aircraft type designator
+		modeSCode: '4CA8AF', // ICAO aircraft registration number
+		radar: 'T-EDDT1', // F24 "radar" data source ID
 		isGlider: false,
 
 		timestamp: 1520538174
