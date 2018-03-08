@@ -3,7 +3,7 @@
 **Fetch aircraft data from [Flightradar24](https://www.flightradar24.com/).** Inofficial.
 
 [![npm version](https://img.shields.io/npm/v/flightradar24-client.svg)](https://www.npmjs.com/package/flightradar24-client)
-[![build status](https://img.shields.io/travis/derhuerst/flightradar24-client.svg)](https://travis-ci.org/derhuerst/flightradar24-client)
+[![build status](https://img.shields.io/travis/derhuerst/flightradar24-client.svg?branch=master)](https://travis-ci.org/derhuerst/flightradar24-client)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/flightradar24-client.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
 [![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
@@ -38,35 +38,28 @@ radar(53, 13, 52, 14)
 ```js
 [
 	{
-		id: 'e3146d4',
-		registration: 'D-MAKD',
-		flight: null,
-		callsign: 'DMAKD',
-		origin: null,
-		destination: null,
-		latitude: 52.5352,
-		longitude: 12.9761,
-		altitude: 2100, // in feet
-		bearing: 84, // in degrees
-		speed: 101, // in knots
-		model: null,
-		modeSCode: '3FED5C',
-		radar: 'T-MLAT1'
-	}, {
-		id: 'e3147c6',
-		registration: 'G-ECOI',
-		flight: 'SN2588',
-		callsign: 'BEL88T',
-		origin: 'TXL',
-		destination: 'BRU',
-		latitude: 52.5947,
-		longitude: 13.1046,
-		altitude: 14815, // in feet
-		bearing: 262, // in degrees
-		speed: 246, // in knots
-		model: 'DH8D',
-		modeSCode: '405E66',
-		radar: 'T-MLAT1'
+		id: '10a6b765',
+		registration: 'EI-EGD',
+		flight: 'FR8544',
+		callsign: 'RYR9XK', // ICAO ATC call signature
+		origin: 'STN', // airport IATA code
+		destination: 'SXF', // airport IATA code
+
+		latitude: 52.7044,
+		longitude: 13.4576,
+		altitude: 8800, // in feet
+		bearing: 106, // in degrees
+		speed: 290, // in knots
+		rateOfClimb: -1216, // in ft/min
+		isOnGround: false,
+
+		squawkCode: '0534', // https://en.wikipedia.org/wiki/Transponder_(aeronautics)
+		model: 'B738', // ICAO aircraft type designator
+		modeSCode: '4CA8AF', // ICAO aircraft registration number
+		radar: 'T-EDDT1', // F24 "radar" data source ID
+		isGlider: false,
+
+		timestamp: 1520538174
 	}
 	// …
 ]
