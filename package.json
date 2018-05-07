@@ -28,7 +28,7 @@
 		"dot-prop": "^4.2.0",
 		"fetch-ponyfill": "^6.0.0",
 		"moment-timezone": "^0.5.13",
-		"parse-jsonp": "^0.1.0",
+		"parse-jsonp": "^1.0.0",
 		"pinkie-promise": "^2.0.1"
 	},
 	"devDependencies": {
