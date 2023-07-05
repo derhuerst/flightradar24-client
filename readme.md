@@ -120,3 +120,4 @@ flight('e3147c6')
 ## Contributing
 
 If you have a question or have difficulties using `flightradar24-client`, please double-check your code and setup first. If you think you have found a bug or want to propose a feature, refer to [the issues page](https://github.com/derhuerst/flightradar24-client/issues).
+
