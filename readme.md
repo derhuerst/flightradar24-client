@@ -3,11 +3,10 @@
 **Fetch aircraft data from [Flightradar24](https://www.flightradar24.com/).** Inofficial.
 
 [![npm version](https://img.shields.io/npm/v/flightradar24-client.svg)](https://www.npmjs.com/package/flightradar24-client)
-[![build status](https://img.shields.io/travis/derhuerst/flightradar24-client.svg?branch=master)](https://travis-ci.org/derhuerst/flightradar24-client)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/flightradar24-client.svg)
 ![minimum Node.js version](https://img.shields.io/node/v/flightradar24-client.svg)
-[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
-[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
+[![support me via GitHub Sponsors](https://img.shields.io/badge/support%20me-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
+[![chat with me on Twitter](https://img.shields.io/badge/chat%20with%20me-on%20Twitter-1da1f2.svg)](https://twitter.com/derhuerst)
 
 
 ## Installing
@@ -59,7 +58,7 @@ console.log(flights)
 		radar: 'T-EDDT1', // F24 "radar" data source ID
 		isGlider: false,
 
-		timestamp: 1520538174
+		timestamp: 1520538174,
 	}
 	// …
 ]
@@ -89,14 +88,14 @@ console.log(flight)
 		name: 'Berlin Tegel Airport',
 		coordinates: {latitude: 52.560001, longitude: 13.288, altitude: 122},
 		timezone: 'Europe/Berlin',
-		country: 'DEU'
+		country: 'DEU',
 	},
 	destination: {
 		id: 'GOT',
 		name: 'Gothenburg Landvetter Airport',
 		coordinates: {latitude: 57.66283, longitude: 12.27981, altitude: 506},
 		timezone: 'Europe/Stockholm',
-		country: 'SWE'
+		country: 'SWE',
 	},
 	departure: '2017-07-22T17:15:00+02:00',
 	scheduledDeparture: '2017-07-22T17:15:00+02:00',
@@ -106,7 +105,7 @@ console.log(flight)
 	scheduledArrival: '2017-07-22T18:35:00+02:00',
 	arrivalTerminal: null,
 	arrivalGate: '19A',
-	delay: 1757
+	delay: 1757,
 }
 ```
 
