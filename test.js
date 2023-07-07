@@ -1,9 +1,7 @@
-'use strict'
+import test from 'tape'
 
-const test = require('tape')
-
-const fetchFromRadar = require('./lib/radar')
-const fetchFlight = require('./lib/flight')
+import {fetchFromRadar} from './lib/radar.js'
+import {fetchFlight} from './lib/flight.js'
 
 const validateAirport = (t, a) => {
 	t.equal(typeof a.id, 'string') // todo: validate IATA code

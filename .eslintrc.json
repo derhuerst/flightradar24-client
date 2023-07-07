@@ -1,8 +1,11 @@
 {
 	"extends": "eslint:recommended",
 	"env": {
-		"es2021": true,
+		"es2022": true,
 		"node": true
+	},
+	"parserOptions": {
+		"sourceType": "module"
 	},
 	"ignorePatterns": [
 		"node_modules"
