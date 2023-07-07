@@ -28,9 +28,9 @@ The four parameters represent a geographical bounding box (in decimal degrees) w
 * `east`: Eastern edge longitude
 
 ```js
-const radar = require('flightradar24-client/lib/radar')
+const fetchFromRadar = require('flightradar24-client/lib/radar.js')
 
-radar(53, 13, 52, 14)
+fetchFromRadar(53, 13, 52, 14)
 .then(console.log)
 .catch(console.error)
 ```
@@ -70,9 +70,9 @@ radar(53, 13, 52, 14)
 You may use the `id` from one of the results above to query more details. The output will roughly look like the [*Friendly Public Transport Format*](https://github.com/public-transport/friendly-public-transport-format).
 
 ```js
-const flight = require('flightradar24-client/lib/flight')
+const fetchFlight = require('flightradar24-client/lib/flight.js')
 
-flight('e3147c6')
+fetchFlight('e3147c6')
 .then(console.log)
 .catch(console.error)
 ```

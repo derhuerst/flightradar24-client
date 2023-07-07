@@ -1,6 +1,9 @@
 'use strict'
 
+const fetchFromRadar = require('./lib/radar')
+const fetchFlight = require('./lib/flight')
+
 module.exports = {
-	radar: require('./lib/radar'),
-	flight: require('./lib/flight')
+	fetchFromRadar,
+	fetchFlight,
 }

@@ -2,8 +2,8 @@
 
 const test = require('tape')
 
-const radar = require('./lib/radar')
-const flight = require('./lib/flight')
+const fetchFromRadar = require('./lib/radar')
+const fetchFlight = require('./lib/flight')
 
 const validateAirport = (t, a) => {
 	t.equal(typeof a.id, 'string') // todo: validate IATA code
@@ -20,8 +20,8 @@ const validateAirport = (t, a) => {
 
 const isValidISODate = (d) => !Number.isNaN(+new Date(d))
 
-test('radar', (t) => {
-	radar(50.5, 8.5, 50, 9)
+test('fetchFromRadar', (t) => {
+	fetchFromRadar(50.5, 8.5, 50, 9)
 	.then((flights) => {
 		t.ok(Array.isArray(flights))
 		if (!flights[0]) throw new Error('no flights found')
@@ -67,15 +67,15 @@ test('radar', (t) => {
 	.catch(t.ifError)
 })
 
-test('flight', (t) => {
-	radar(50.5, 8.5, 50, 9)
+test('fetchFlight', (t) => {
+	fetchFromRadar(50.5, 8.5, 50, 9)
 	.then((flights) => {
 		t.ok(Array.isArray(flights))
 		if (!flights[0]) throw new Error('no flights found')
 
 		t.ok(flights[0])
 		t.ok(flights[0].id)
-		return flight(flights[0].id)
+		return fetchFlight(flights[0].id)
 	})
 	.then((flight) => {
 		t.ok(flight)
