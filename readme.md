@@ -5,6 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/flightradar24-client.svg)](https://www.npmjs.com/package/flightradar24-client)
 [![build status](https://img.shields.io/travis/derhuerst/flightradar24-client.svg?branch=master)](https://travis-ci.org/derhuerst/flightradar24-client)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/flightradar24-client.svg)
+![minimum Node.js version](https://img.shields.io/node/v/flightradar24-client.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
 [![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
 

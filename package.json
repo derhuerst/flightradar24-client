@@ -22,7 +22,7 @@
 	"bugs": "https://github.com/derhuerst/flightradar24-client/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=18"
 	},
 	"dependencies": {
 		"dot-prop": "^5.2.0",
