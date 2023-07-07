@@ -25,11 +25,9 @@
 		"node": ">=18"
 	},
 	"dependencies": {
-		"dot-prop": "^5.2.0",
 		"fetch-ponyfill": "^6.0.0",
 		"moment-timezone": "^0.5.13",
-		"parse-jsonp": "^1.0.0",
-		"pinkie-promise": "^2.0.1"
+		"parse-jsonp": "^1.0.0"
 	},
 	"devDependencies": {
 		"tap-min": "^1.2.1",
