@@ -20,9 +20,9 @@ const validateAirport = (t, a) => {
 
 const isValidISODate = (d) => !Number.isNaN(+new Date(d))
 
-test('fetchFromRadar', (t) => {
-	fetchFromRadar(50.5, 8.5, 50, 9)
-	.then((flights) => {
+test('fetchFromRadar', async (t) => {
+	const flights = await fetchFromRadar(50.5, 8.5, 50, 9)
+	{
 		t.ok(Array.isArray(flights))
 		if (!flights[0]) throw new Error('no flights found')
 
@@ -62,22 +62,23 @@ test('fetchFromRadar', (t) => {
 			t.equal(typeof flight.isGlider, 'boolean')
 			t.equal(typeof flight.timestamp, 'number')
 		}
-		t.end()
-	})
-	.catch(t.ifError)
+	}
+
+	t.end()
 })
 
-test('fetchFlight', (t) => {
-	fetchFromRadar(50.5, 8.5, 50, 9)
-	.then((flights) => {
+test('fetchFlight', async (t) => {
+	const flights = await fetchFromRadar(50.5, 8.5, 50, 9)
+	{
 		t.ok(Array.isArray(flights))
 		if (!flights[0]) throw new Error('no flights found')
 
 		t.ok(flights[0])
 		t.ok(flights[0].id)
-		return fetchFlight(flights[0].id)
-	})
-	.then((flight) => {
+	}
+
+	const flight = await fetchFlight(flights[0].id)
+	{
 		t.ok(flight)
 
 		t.equal(typeof flight.liveData, 'boolean')
@@ -123,8 +124,6 @@ test('fetchFlight', (t) => {
 			t.equal(typeof flight.arrivalGate, 'string')
 		}
 		if (flight.delay !== null) t.equal(typeof flight.delay, 'number')
-
-		t.end()
-	})
-	.catch(t.ifError)
+	}
+	t.end()
 })

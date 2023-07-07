@@ -31,9 +31,8 @@ The four parameters represent a geographical bounding box (in decimal degrees) w
 ```js
 const fetchFromRadar = require('flightradar24-client/lib/radar.js')
 
-fetchFromRadar(53, 13, 52, 14)
-.then(console.log)
-.catch(console.error)
+const flights = await fetchFromRadar(53, 13, 52, 14)
+console.log(flights)
 ```
 
 ```js
@@ -73,9 +72,8 @@ You may use the `id` from one of the results above to query more details. The ou
 ```js
 const fetchFlight = require('flightradar24-client/lib/flight.js')
 
-fetchFlight('e3147c6')
-.then(console.log)
-.catch(console.error)
+const flight = await fetchFlight('e3147c6')
+console.log(flight)
 ```
 
 ```js
