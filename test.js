@@ -122,6 +122,32 @@ test('fetchFlight', async (t) => {
 			t.equal(typeof flight.arrivalGate, 'string')
 		}
 		if (flight.delay !== null) t.equal(typeof flight.delay, 'number')
+
+		if (flight.trail !== null) {
+			t.ok(Array.isArray(flight.trail))
+
+			for (let trail of flight.trail) {
+				t.ok(trail)
+				if (trail.latitude !== null) {
+					t.equal(typeof trail.latitude, 'number')
+				}
+				if (trail.longitude !== null) {
+					t.equal(typeof trail.longitude, 'number')
+				}
+				if (trail.altitude !== null) {
+					t.equal(typeof trail.altitude, 'number')
+				}
+				if (trail.bearing !== null) {
+					t.equal(typeof trail.bearing, 'number')
+				}
+				if (trail.speed !== null) {
+					t.equal(typeof trail.speed, 'number')
+				}
+				if (trail.timestamp !== null) {
+					t.equal(typeof trail.timestamp, 'number')
+				}
+			}
+		}
 	}
 	t.end()
 })
